@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 1.75em; /* 75% larger than base text size */
+  text-align: center;
+}
+
+.menu {
+  font-weight: bold;
+  background-color: wheat;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+.menu1 {
+  background-color: orange;
+}
+
+.menu2 {
+  background-color: green;
+}
+
+.menu3 {
+  background-color: purple;
+}
+
+
+
+.menu > .description {
+  clear: both;
+  margin-top: 35px;
+}
+
+.menu > .title {
+  font-size: 1.25em; /* 25% larger than base text size */
+  border: 1px solid;
+  width: 150px; /* I opted for fixed-pixel width over percentage so each title would have a consistent size.  Otherwise, in the tablet view, the div on the second line (eggplant) would be wider. */
+  text-align: center;
+  float: right;
+  margin: -11px -11px 0px 0px;
+  padding: 5px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    margin: 10px 1% 10px 1%;    
+    width: 31.33%; /* 33.33% - 1% left margin - 1% right margin % */
+  }
+ 
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    margin: 10px 1% 10px 1%;
+  }
+  
+  .col-md-6 {
+    width: 48%; /* 50% - 1% left margin - 1% right margin % */
+  }
+ 
+  .col-md-12 {
+    width: 98%; /* 100% - 1% left margin - 1% right margin % */
+  }
+ 
+}
