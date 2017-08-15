@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+   font-family: 'Arimo', sans-serif;
+   background-color: #F0F9FA;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 2.75em; /* 75% larger than base text size */
+  font-family: 'Handlee', cursive;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.35em; /* 35% larger than base text size */
+  font-family: 'Handlee', cursive;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.menu {
+  font-weight: bold;
+  background-color: #C7EAF4;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 0px 0px 10px;
+}
+
+
+
+.menu-tile {
+  margin: 5px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  background-color: #C7EAF4;
+}
+
+.menu-tile.header {
+  font-size: 1.60em; 
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.menu-tile.description {
+  margin-top: 0px;
+}
+
+
+.navbar-brand {
+  font-family: 'Bowlby One', cursive;
+}
+
+.navbar-default .navbar-brand {
+  color: #3F444D;
+}
+
+.navbar {
+  background-color: #B4C4C7;
+}
+
+.navbar-nav {
+  background-color: #87A8C1;
+}
+
+.nav.navbar-nav>li>a {
+color: #fff;
+}
+
+.nav.navbar-nav>li.active>a {
+  color: #000;
+  background-color: #F9F2D1;
+  font-weight: bold;
+}
+
+.nav.navbar-nav>li>a:hover, .nav.navbar-nav>li.active>a:hover {
+  color: #000;
+  background-color: #F4E495;
+  font-weight: bold;
+}
+
+.glyphicon {
+  font-size: .9em;
+  margin-right: 5px;
+  color: #397C24;
+
+}
+
