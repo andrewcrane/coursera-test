@@ -83,7 +83,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  buildAndShowHomeHTML); // Explicitely setting the flag to get JSON from server processed into an object literal
+  buildAndShowHomeHTML,
+  true); // Explicitely setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
 
@@ -102,7 +103,7 @@ function buildAndShowHomeHTML (categories) {
       // variable's name implies it expects.
       console.log(categories);
       var chosenCategoryShortName = chooseRandomCategory(categories);
-
+      console.log(chosenCategoryShortName);
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
